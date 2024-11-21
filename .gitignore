@@ -1,0 +1,8 @@
+.env
+.env.*
+__pycache__/
+fall252/
+venv/
+env/
+ENV/
+.venv
