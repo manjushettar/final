@@ -1,0 +1,47 @@
+
+
+Simulation Run at 2024-12-13 15:33:15.969489
+
+Playlists Created During Simulation:
+================================================================================
+
+POP_ENTHUSIAST AGENTS' PLAYLISTS:
+----------------------------------------
+
+Agent: pop_agent_0
+Playlist: My Dance Mix Vol.1
+Genre Focus: dance
+Songs: 4
+Description: A curated collection of dance tracks
+
+INDIE_ENTHUSIAST AGENTS' PLAYLISTS:
+----------------------------------------
+
+Agent: general_agent_1
+Playlist: My Rock Mix Vol.1
+Genre Focus: rock
+Songs: 2
+Description: A curated collection of rock tracks
+
+Playlist Summary Statistics:
+================================================================================
+Total Playlists Created: 2
+
+Playlists by Agent Type:
+agent_archetype
+pop_enthusiast      1
+indie_enthusiast    1
+
+Most Common Genre Focus:
+genre_focus
+dance    1
+rock     1
+
+General Simulation Statistics:
+================================================================================
+total_interactions: 224
+interactions_by_archetype: {'classical_connoisseur': 181, 'indie_enthusiast': 10, 'pop_enthusiast': 33}
+playlists_created: 2
+average_rating: 4.902439024390244
+skip_rate: 0.14732142857142858
+SIMULATION END================================================================================
