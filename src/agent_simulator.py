@@ -2,7 +2,7 @@ import random
 import pandas as pd
 from typing import List, Dict
 from datetime import datetime, timedelta
-
+from dataloader import SpotifyDataLoader
 from agents import (
     MusicAgent,
     create_pop_agent,
@@ -176,26 +176,15 @@ if __name__ == "__main__":
     with open('simulation_results.txt', 'a') as f:
         f.write(f"\n\nSimulation Run at {datetime.now()}\n")
         genres = ['pop', 'classical', 'rock', 'jazz', 'electronic', 'hip-hop', 'indie', 'ambient']
-        # RANDOM SONGS - NOT EVEN SONGS FROM DATASET (NOT EVEN SONGS!!)
-        # JUST A PLACEHOLDER CHANGE!!!
-        sample_songs = [
-            {
-                'id': f'song_{i}',
-                'genre': random.choice(genres),
-                'danceability': random.random(),
-                'energy': random.random(),
-                'valence': random.random(),
-                'acousticness': random.random(),
-                'tempo': random.randint(60, 180)
-            }
-            for i in range(200)
-        ]
 
+        loader = SpotifyDataLoader('data/spotify_songs.csv')
+        loader.load_data()
+        songs_data = loader.get_random_songs(1000)
         simulator = SimulationRunner(
-            songs_data=sample_songs,
-            n_pop_agents=3,
-            n_classical_agents=2,
-            n_general_agents=2,
+            songs_data=songs_data,
+            n_pop_agents=5,
+            n_classical_agents=5,
+            n_general_agents=5,
             simulation_days=30
         )
 
