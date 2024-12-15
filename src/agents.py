@@ -42,6 +42,9 @@ class Playlist(BaseModel):
     genre_focus: Optional[str] = None
 
 class MusicAgent(BaseModel):
+    '''
+    music agent
+    '''
     agent_id: str
     archetype: str
 

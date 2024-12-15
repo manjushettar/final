@@ -6,3 +6,9 @@ venv/
 env/
 ENV/
 .venv
+.coverage
+src/.ropeproject
+results/*
+data_eng/.ipynb_checkpoints
+.ropeproject
+.pytest_cache
